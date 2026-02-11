@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Лабораторная 4</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- Задание 1 -->
+  <section class="task1">
+    <div class="blocks-wrapper">
+      <div class="block block1"></div>
+      <div class="block block2"></div>
+      <div class="block block3"></div>
+      <div class="block block4"></div>
+      <div class="block block5"></div>
+    </div>
+  </section>
+
+  <!-- Задание 2: форма -->
+  <section class="task2">
+    <div class="form-container">
+
+      <div class="col left">
+        <h3 class="section-title">Date personale</h3>
+
+        <form action="#" method="post" class="main-form">
+          <div class="field"><label for="lname">*Numele:</label><input id="lname" type="text" name="lname"></div>
+          <div class="field"><label for="fname">*Prenumele:</label><input id="fname" type="text" name="fname"></div>
+          <div class="field"><label for="email">E-mail:</label><input id="email" type="email" name="email"></div>
+          <div class="field"><label for="bdate">*Data nasterii:</label><input id="bdate" type="date" name="bdate"></div>
+
+          <div class="field radio-row">
+            <label>Sexul:</label>
+            <label class="inline"><input type="radio" name="sex" value="F"> F</label>
+            <label class="inline"><input type="radio" name="sex" value="M"> M</label>
+          </div>
+
+          <div class="field"><label for="phone">Telefonul:</label><input id="phone" type="text" name="phone"></div>
+
+          <div class="field"><label for="raion">Raionul:</label>
+            <select id="raion" name="raion">
+              <option selected>Edineț</option>
+              <option>Chișinău</option>
+            </select>
+          </div>
+
+          <div class="field checkbox-group">
+            <label>Studii</label>
+            <div class="checkboxes">
+              <label><input type="checkbox" name="study" value="college"> Colegiu</label>
+              <label><input type="checkbox" name="study" value="licenta"> Licență</label>
+              <label><input type="checkbox" name="study" value="master"> Masterat</label>
+            </div>
+          </div>
+
+          <div class="field"><label for="extra">Suplimentar:</label><textarea id="extra" name="extra" rows="6" placeholder="Scrie aici"></textarea></div>
+
+          <div class="form-actions">
+            <input type="reset" value="Anuleaza">
+            <input type="submit" value="Trimite">
+          </div>
+        </form>
+      </div>
+
+      <div class="col right">
+        <div class="box product">
+          <h4 class="section-title small">Date despre produs ales</h4>
+
+          <div class="field"><label for="prod">*Denumirea produs:</label><input id="prod" type="text" name="prod"></div>
+          <div class="field"><label for="maker">*Producătorul:</label><input id="maker" type="text" name="maker"></div>
+          <div class="field"><label for="qty">*Cantitatea de produse:</label><input id="qty" type="number" name="qty"></div>
+
+          <div class="field color-row">
+            <label>*Culoarea:</label>
+            <div class="color-sample" title="culoare"></div>
+          </div>
+
+          <div class="field"><label for="size">*Mărimea:</label><input id="size" type="text" name="size"></div>
+        </div>
+
+        <div class="box bank">
+          <h4 class="section-title small">Date bancare</h4>
+
+          <div class="field radio-row">
+            <label>*Tipul cardului:</label>
+            <label class="inline"><input type="radio" name="card" value="visa"> Visa</label>
+            <label class="inline"><input type="radio" name="card" value="mc"> MasterCard</label>
+          </div>
+
+          <div class="field"><label for="cardnum">*Numărul cardului:</label><input id="cardnum" type="text" name="cardnum"></div>
+
+          <div class="field"><label for="exp">*Expiră:</label><input id="exp" type="date" name="exp"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="note">*Câmpul trebuie să fie completat</p>
+  </section>
+
+  <!-- Задание 3 -->
+  <section class="task3">
+    <p class="fancy">Это пример абзаца для демонстрации псевдоэлементов и псевдоклассов.</p>
+
+    <ul class="list-a">
+      <li>Пункт A1</li>
+      <li>Пункт A2</li>
+    </ul>
+
+    <ol class="list-b">
+      <li>Пункт B1</li>
+      <li>Пункт B2</li>
+      <li>Пункт B3</li>
+    </ol>
+  </section>
+
+  <!-- Задание 4 -->
+  <section class="task4">
+    <a class="external" href="https://www.example.com" target="_blank" rel="noopener">Example.com</a>
+  </section>
+
+</body>
+</html>
